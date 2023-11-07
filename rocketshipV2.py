@@ -25,5 +25,3 @@ Bottom()
 Top()
 print(Bar)
 cone()
-
-blah blah blah
