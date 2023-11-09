@@ -1,36 +1,35 @@
 
 # Moffett, 11/9/2023
-# rocketship3.py
+# rocketshipv3.py
 # ASCII ART OF A ROCKET, testing loops
 
-size=3
-#size cannot = numbers that lead to text wrapping around the screen (for me its high 40's)
+
 
 def TopJet():
-    for i in range(1, size+1):
+    for i in range(1, 4):
         print('|'
-            + "." * (size-i)
+            + "." * (3-i)
             + "/\\" * (i)
-            + ".." * ((size-i))
+            + ".." * ((3-i))
             + "/\\" * (i)
-            + "." * (size-i)
+            + "." * (3-i)
             + "|")
 def BotJet():
-    for i in range(1, size+1):
+    for i in range(1, 4):
         print('|'
             + "." * (i-1)
-            + "\\/" * ((size-i)+1)
+            + "\\/" * ((3-i)+1)
             + ".." * (i-1)
-            + "\\/" * ((size-i)+1)
+            + "\\/" * ((3-i)+1)
             + "." * (i-1)
             + "|")
 def Bar():
-        print(("+")+("=*"* (size*2))+("+"))
-#jetfuel issue fixed 
+        print(("+")+("=*"* (3*2))+("+"))
+
 def Cone():
-    for i in range(1, (size*2)+1):
+    for i in range(1, 6):
         print(
-            " " * ((size*2)-i)
+            " " * (6-i)
             + "/" * (i)
             + "**"
             + "\\" * (i))
@@ -43,7 +42,7 @@ def HBody():
     TopJet()
     
 
-#code
+#Rocket
 Cone()
 Bar()
 DBody()
