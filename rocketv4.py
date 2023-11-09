@@ -1,6 +1,6 @@
 
 # Moffett, 11/9/2023
-# rocketship3.py
+# rocketv4.py
 # ASCII ART OF A ROCKET, testing loops
 
 size=3
