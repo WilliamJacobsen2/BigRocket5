@@ -6,7 +6,9 @@
 
 size=input("What size rocket do you want?")
 size= int(size)
-#size cannot = numbers that lead to text wrapping around the screen (for me its high 40's)
+
+if (size>50):
+    size=int(input("Woah there, slow your role, I can't make a rocket that big. Try a smaller. Less than 50 is the key"))
 
 def TopJet():
     for i in range(1, size+1):
