@@ -3,13 +3,15 @@
 # rocketv4.py
 # ASCII ART OF A ROCKET, testing loops
 
-
 size=input("What size rocket do you want?")
 size= int(size)
 
-if (size>50):
-    size=int(input("Woah there, slow your role, I can't make a rocket that big. Try a smaller. Less than 50 is the key"))
+while size>50:
+    print("Woah there, slow your role, I can't make a rocket that big. Try a smaller. Less than 50 is the key")
+    size=int(input("enter a size less than 50 for your rocket"))
 
+print("rocket size is:", size)
+    
 def TopJet():
     for i in range(1, size+1):
         print('|'
